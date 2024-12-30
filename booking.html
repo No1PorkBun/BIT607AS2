@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Snazzy Paws Grooming: Premium grooming services for your beloved pets.">
+    <title>Snazzy Paws Grooming</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Snazzy Paws Grooming</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Booking Page -->
+    <div class="booking-section">
+        <h2>Book a Grooming Session</h2>
+        <form action="submit_booking.html" method="POST">
+            <label for="owner-name">Owner's Name:</label>
+            <input type="text" id="owner-name" name="owner-name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="dog-name">Dog's Name:</label>
+            <input type="text" id="dog-name" name="dog-name" required>
+
+            <label for="breed">Breed:</label>
+            <input type="text" id="breed" name="breed" required>
+
+            <label for="age">Dog's Age:</label>
+            <input type="number" id="age" name="age" required>
+            
+            <label for="serivce">Service</label>
+            <select id="" name="service">
+                <option value="bath-brush">Bath & Brush</option>
+                <option value="haircut">Haircut</option>
+                <option value="nail-trim">Nail Trim</option>
+                <option value="ear-cleaning">Ear Cleaning</option>
+                <option value="teeth-brushing">Teeth Brushing</option>
+                <option value="shedding-treatment">De-shredding Treatment</option>
+                <option value="flea-tick-treatment">Flea & Tick Treatment</option>
+                <option value="spa-package">Spa Package</option>
+                <option value="express-service">Express Service</option>
+                <option value="medicated-bath">Medicated Bath</option>
+                <option value="special-cut">Special-Breed Cuts</option>
+                <option value="puppy-package">Puppy Package</option>
+                <option value="senior-package">Senior Dog Package</option>
+                <option value="full-groom-package">Full Grooming Package</option>
+            </select>
+
+            <label for="prefer-date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="prefer-time">Preferred Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <footer>
+        <p>Snazzy Paws Grooming</p>
+        <p>Opening Hours: Mon-Fri 8 AM - 6 PM, Sat 9 AM - 4 PM, Sun Closed</p>
+    </footer>
+</body>
+</html>
